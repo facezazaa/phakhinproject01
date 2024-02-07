@@ -12,3 +12,7 @@ with col1:
 with col2:
     st.subheader("จำนวนผู้เสียชีวิต")
     st.write("2,5600")
+
+dt=pd.read_excel('data/opendata-rtddi54-66-9month.xlsx')
+
+#st.write
