@@ -15,4 +15,10 @@ with col2:
 
 dt=pd.read_excel('data/opendata-rtddi54-66-9month.xlsx')
 
-#st.write
+#st.write()
+NumM=dt[dt['Sex']=='ชาย'].count()
+NumM=dt[dt['Sex']=='หญิง'].count()
+
+dtSex=[NumM,NumF]
+dtSexb=pd.DataFrame(dtSex)
+st.bar_chart(dtSexb)
